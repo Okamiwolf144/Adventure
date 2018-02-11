@@ -73,8 +73,7 @@ while True:
         continue
 
 while True:
-    myClass = input(
-        "You are about to embark on an epic quest! What class shall you be, a Knight or a Mage?: ")
+    myClass = input("You are about to embark on an epic quest! What class shall you be, a Knight or a Mage?: ")
 
     if myClass in ["knight", "Knight"]:
         print("You have selected Knight.")
@@ -115,6 +114,7 @@ while True:
         time.sleep(3)
         print("The inside of the castle is dark and eerily quiet.")
         time.sleep(3)
+        break
 
     elif myGen in ["hp", "HP"]:
         print("Your HP is " + str(HP))
@@ -124,8 +124,7 @@ while True:
         continue
 
 while True:
-    choiceTwo = input(
-        "There are two doors in front of you, one to your Left and your Right, which one shall you enter?: ")
+    choiceTwo = input("There are two doors in front of you, one to your Left and your Right, which one shall you enter?: ")
 
     if choiceTwo in ["left", "Left"]:
         print("You slowly open the Left Door, only to find it to be completely empty, you procede to the Right Door; entering it.")

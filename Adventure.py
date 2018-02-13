@@ -13,6 +13,11 @@ def checkHP():
         sys.exit()
 
 
+def printHP():
+    print("Your HP is " + str(HP))
+    time.sleep(0.5)
+
+
 def usePotion():
     if havePotion is True:
         randomHP = random.randint(10, 40)
@@ -27,8 +32,8 @@ while True:
     choiceHelp = input("Would you like instructions on how to play? (y/n): ")
 
     if choiceHelp in ["y", "Y"]:
-        print("Type HP anytime to check your health.")
-        time.sleep(1)
+        print("""Type "HP" anytime to check your health.""")
+        print("""Type "Use Potion" while in combat to drink a health potion.""")
         break
 
     elif choiceHelp in ["n", "N"]:
@@ -65,8 +70,7 @@ while True:
         break
 
     elif myGen in ["hp", "HP"]:
-        print("Your HP is " + str(HP))
-        time.sleep(0.5)
+        checkHP()
         continue
 
     else:
@@ -86,8 +90,8 @@ while True:
         break
 
     elif myGen in ["hp", "HP"]:
-        print("Your HP is " + str(HP))
-        time.sleep(0.5)
+        checkHP()
+        continue
     else:
         continue
 
@@ -117,8 +121,8 @@ while True:
         break
 
     elif myGen in ["hp", "HP"]:
-        print("Your HP is " + str(HP))
-        time.sleep(0.5)
+        checkHP()
+        continue
 
     else:
         continue
@@ -127,6 +131,13 @@ while True:
     choiceTwo = input("There are two doors in front of you, one to your Left and your Right, which one shall you enter?: ")
 
     if choiceTwo in ["left", "Left"]:
+        RNG = random.ranint(1, 2)
+        if RNG ==
+            print("inside of the room lies many crates, inside one you find a potion!")
+            time.sleep(2)
+            print("You take the potion")
+            time.sleep(2)
+
         print("You slowly open the Left Door, only to find it to be completely empty, you procede to the Right Door; entering it.")
         time.sleep(3)
         break
@@ -139,8 +150,8 @@ while True:
         print("Your HP is " + str(HP))
         time.sleep(0.5)
     elif myGen in ["hp", "HP"]:
-        print("Your HP is " + str(HP))
-        time.sleep(0.5)
+        checkHP()
+        continue
     else:
         continue
 

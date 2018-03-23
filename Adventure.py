@@ -1,6 +1,4 @@
-import sys
-import time
-import random
+import sys, time, random
 
 HP = 100
 havePotion = False
